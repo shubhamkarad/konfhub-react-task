@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Nunito:wght@400;700&display=swap");
+.events-container {
+    margin: 20px auto;
+    background-color: #FFDBA6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 400px;
+    border-radius: 50px;
+    position: relative;
+}
+.events-container .events-description {
+    padding-left: 20px;
+    color: #572148;
+}
+.events-container .events-description h1 {
+    font-family: "Caveat Brush",cursive;
+    font-size: 70px;
+    margin: 0;
+    font-weight: 500;
+    text-shadow: 2px 3px 2px #00000058;
+}
+.events-container .events-description p {
+    width: 80%;
+    margin-left: 30px;
+}
+
+/* Responsive CSS  */
+
+@media (max-width: 728px){
+    .events-container {
+        flex-direction: column;
+    }
+    .events-container .events-description {
+        margin: 0px;
+    }
+    .events-container .events-description p {
+        position: absolute;
+        left: 20px;
+        margin: 0px auto;
+        width: 90%;
+    }
+    .header .header-image {
+        width: 80%;
+        margin: 20px;
+    }
+}
+@media (max-width: 800px ){
+    .events-container {
+        flex-direction: column;
+    }
+    .events-container .events-description p {
+        position: absolute;
+        left: 20px;
+        margin: 0px auto;
+        width: 90%;
+    }
+}
