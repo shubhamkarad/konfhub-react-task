@@ -1,10 +1,9 @@
 import './App.css';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 import Events from './components/events/events';
 import Header from './components/header/header';
 import Search from './components/search/search';
-// import Footer from './components/footer/footer';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
 import LoadMoreCta from './components/loadMoreCta/loadMoreCta';
 function App() {
   const [eventData, setEventData] = useState([]);
