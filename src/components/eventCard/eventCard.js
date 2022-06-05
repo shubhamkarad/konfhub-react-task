@@ -1,4 +1,4 @@
-import eventCardImg from "../../assets/event-card-img.png";
+import eventCardImg from "../../assets/images/event-card-img.png";
 import podium from "../../assets/icons/podium.svg";
 import info from "../../assets/icons/info.svg";
 import indicator from "../../assets/icons/indicator.svg";

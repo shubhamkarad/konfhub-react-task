@@ -1,5 +1,5 @@
-import logo from '../../assets/logo.svg';
-import eventsBanner from '../../assets/events-banner.svg';
+import logo from '../../assets/images/logo.svg';
+import eventsBanner from '../../assets/images/events-banner.svg';
 import "./header.css";
 const Header = () => {
     return(
