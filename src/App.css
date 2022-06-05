@@ -1,42 +1,6 @@
 .app {
     margin: 30px 70px;
 }
-.load-more-events {
-    margin: 4rem auto;
-    position: relative;
-}
-.load-more-events .line-wrapper {
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-    top: 10px;
-    color: #CCCCCC;
-}
-.load-more-events .cta-wrapper {
-    display: flex;
-    margin: 0px auto;
-    width: 200px;
-    justify-content: center;
-    height: 20px;
-    background: white;
-}
-
-.load-more-events .load-more-cta {
-    display: flex;
-    justify-content: center;
-    background-color: #fff;
-    width: 130px;
-    height: 40px;
-    align-items: center;
-    border-radius: 30px;
-    border: 1px solid #CCCCCC;
-    font-family: 'Prompt', sans-serif;
-    font-weight: bold;
-}
-.load-more-events .load-more-cta:hover {
-    color: #572148;
-    cursor: pointer;
-}
 @media (max-width: 728px){
     .app {
         margin: 0;

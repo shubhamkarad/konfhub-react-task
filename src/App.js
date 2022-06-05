@@ -5,11 +5,13 @@ import Search from './components/search/search';
 // import Footer from './components/footer/footer';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import LoadMoreCta from './components/loadMoreCta/loadMoreCta';
 function App() {
   const [eventData, setEventData] = useState([]);
   const [eventLimit, setEventLimit] = useState(16);
   const [eventStatus, setEventStatus] = useState();
   const [eventSearch, setEventSearch] = useState([]);
+  const [eventCount, setEventCount] = useState();
   useEffect(()=> {
     const fetchEventsData = async () => {
       const result = await axios("https://iitm1blt3l.execute-api.ap-southeast-1.amazonaws.com/dev/hosted-events?",{
@@ -20,9 +22,10 @@ function App() {
         }
       });
       setEventData(result.data.events);
+      setEventCount(result.data.count);
     }
     fetchEventsData();
-  },[eventLimit, eventStatus, eventSearch]);
+  },[eventLimit, eventStatus, eventSearch, eventCount]);
 
   return (
     <div className="app">
@@ -31,11 +34,11 @@ function App() {
         getSearchEvent = { (value)=> setEventSearch(value)}
         getEventStatus = { (status)=> setEventStatus(status)}
       />
-      <Events eventData = {eventData}/>
-      <div className="load-more-events">
-            <hr className="line-wrapper"/>
-            <div className="cta-wrapper"><button className="load-more-cta" onClick={()=> setEventLimit(eventLimit + 12)}> Load More </button></div>
-      </div>
+      <Events eventData = {eventData} eventCount = {eventCount}/>
+      <LoadMoreCta 
+        eventLimit = {eventLimit}
+        loadMoreEvents = {(limit) => setEventLimit(limit)}
+      />
     </div>
   );
 }

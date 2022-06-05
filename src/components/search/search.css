@@ -55,7 +55,18 @@
     width: 200px;
     color: #999999;
     font-family: 'Prompt', sans-serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
 }
+.search-container .select-arrow {
+    position: absolute;
+    bottom: 35px;
+    right: 40px;
+    cursor: pointer;
+}
+
 .search-container select option {
     color: black;
 }

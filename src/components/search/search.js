@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./search.css";
 import searchIcon from "../../assets/icons/search.svg";
+import arrow from "../../assets/icons/Arrow.svg";
 
 const Search = (props) => {
     const [searchValue, setSearchValue]= useState(" ");
@@ -37,6 +38,9 @@ const Search = (props) => {
                     <option value="false">False</option>
                     <option value="" selected hidden>Select Type</option>
                 </select>
+                <div className="select-arrow">
+                    <img src={arrow} alt="dropdown-arrow"/>
+                </div>
             </div>
         </div>
         </div>
