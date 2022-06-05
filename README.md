@@ -1,6 +1,6 @@
-# Getting Started with Events - single page react app
-## Single page React app which displays multiple cards of events 
-    In this application I am using React functional components and React hooks to perform operation on the data which is getting from API.
+# Getting Started with single page react application
+## Single page React application which displays multiple cards of events. 
+#### In this application I am using React functional components, React hooks and Axios to perform operation on the data which is getting from API.
 ## Usage
 1. _This application is use to get the details of an upcoming events. User can get the required information like event venue, event name, is it free/paid and online/offline_
 2. _User can search an event in search box and get the details of the same._
@@ -21,14 +21,14 @@
     *  Install Axios in React App:
 
             npm install axios
-## Load More Events
+### Load More Events
 * By clicking on Load more CTA user can able to see more events.
-## Responsive for mobile, tablet and wide screen
+### Responsive for mobile, tablet and wide screen
 * Application is responsive for all the devices.
 * I have used media quries in CSS to make the application responsive. 
 
 ## Structure of the application
 * I have divided all sections into components.
-* Events componet contains the functional part of the events.
+* Events component contain the functional part of the events.
 * Similarly for header, search , button and eventCards I have created separate components.
  
