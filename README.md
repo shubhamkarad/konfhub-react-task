@@ -31,4 +31,9 @@
 * I have divided all sections into components.
 * Events component contain the functional part of the events.
 * Similarly for header, search , button and eventCards I have created separate components.
- 
+imgur
+
+## Screenshots
+
+<img src="https://i.imgur.com/Xmq4scg.png" width="450">
+<img src="https://i.imgur.com/y786gSq.png" width="450">

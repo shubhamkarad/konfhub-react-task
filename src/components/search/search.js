@@ -4,8 +4,8 @@ import searchIcon from "../../assets/icons/search.svg";
 import arrow from "../../assets/icons/Arrow.svg";
 
 const Search = (props) => {
-    const [searchValue, setSearchValue]= useState(" ");
-    const [option, setOption] = useState();
+    const [searchValue, setSearchValue]= useState("");
+    const [option, setOption] = useState("");
     
     const onInputChangeHandler = (value) => {
         setSearchValue(value);
@@ -19,7 +19,7 @@ const Search = (props) => {
         <div className="search">
         <div className="search-container">
             <div className="search-box">
-                <label for="search-label">Search</label>
+                <label>Search</label>
                 <input type="search"
                     value = {searchValue}
                     onChange = {(e) => onInputChangeHandler(e.target.value)}      
@@ -29,14 +29,14 @@ const Search = (props) => {
                 </div>
             </div>
             <div className="past-events">
-                <label for="past-events">Past Events</label>
+                <label>Past Events</label>
                 <select
                     value={option}
                     onChange={ (e)=> onSelectHandler(e.target.value)}
                 >
+                    <option hidden>Select Type</option>
                     <option value="true">True</option>
                     <option value="false">False</option>
-                    <option value="" selected hidden>Select Type</option>
                 </select>
                 <div className="select-arrow">
                     <img src={arrow} alt="dropdown-arrow"/>

@@ -13,7 +13,7 @@ function App() {
   const [eventCount, setEventCount] = useState();
   useEffect(()=> {
     const fetchEventsData = async () => {
-      const result = await axios("https://iitm1blt3l.execute-api.ap-southeast-1.amazonaws.com/dev/hosted-events?",{
+      const result = await axios(process.env.REACT_APP_EVENTS_API,{
         params: {
           limit: `${eventLimit}`,
           search_query: `${eventSearch}`,
